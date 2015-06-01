@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Portafolio Web</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63464248-1', 'auto');
+     ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+    <nav class="MainMenu">
+        <a class="icon-menu Header-button is-active" onClick="$('.MainMenu').toggleClass('u-abrirmenu');$('.MainMenu__list').toggleClass('u-visible');$('.MainMenu__item').toggleClass('u-visible');"></a>
+        <ul class="MainMenu__list ">
+            <li class="MainMenu__item">
+                <a class="MainMenu__link" href="#yo">Mi Perfil</a>
+            </li>
+            <li class="MainMenu__item">
+                <a class="MainMenu__link" href="#experiencias">Mi Experiencia</a>
+            </li>
+            <li class="MainMenu__item">
+                <a class="MainMenu__link" href="#trabajo">Mis trabajos</a>
+            </li>
+            <li class="MainMenu__item">
+                <a class="MainMenu__link" href="#contacto">Contáctame</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="yo" class="Header">
+        <figure class="Header__imageContainer">
+            <img src="img/avatar.jpg" alt="Avatar" class="Header__image"/>
+            <p class="Header__name">Adrián Medina</p>
+            <figcaption class="Header__description">
+                <a href="https://uy.linkedin.com/in/amedina791" class="Header__link"><img src="img/linkedin.png" alt="linkedin" class="" width="64px"/></a>
+                <a href="mailto:adrianemedina@vera.com.uy" class="Header__link"><img src="img/mail.png" alt="mail" class="" width="64px"/></a><br>
+            </figcaption>
+        </figure>
+    </header>
+
+    <section id="experiencias" class="Experience">
+        <div class="u-containerDefault">
+            <h2 class="Experience__title u-title">Mi Experiencia</h2>
+            <article class="Experience__item">
+             <figure class="Experience__imageContainer">
+                <img src="https://github.com/Adrianns/adrianns.github.io/blob/master/img/Git.png?raw=true" alt="GIT" class="Experience__image" height="220px"/>
+                <figcaption class="">
+                    GIT
+                </figcaption>
+            </figure>
+        </article>
+        <article class="Experience__item">
+             <figure class="Experience__imageContainer">
+                <img src="https://github.com/Adrianns/adrianns.github.io/blob/master/img/GitHubLogo.png?raw=true" alt="GITHUB" class="Experience__image" height="220px"/>
+                <figcaption class="">
+                    GITHUB
+                </figcaption>
+            </figure>
+        </article>
+            <article class="Experience__item">
+             <figure class="Experience__imageContainer">
+                <img src="img/html5-css3-js.png" alt="html5-css3-js" class="Experience__image" width="320px"/>
+                <figcaption class="">
+                    HTML5,CSS3 &amp JS
+                </figcaption>
+            </figure>
+        </article>
+        <article class="Experience__item">
+             <figure class="Experience__imageContainer">
+                <img src="img/phplogo.png" alt="phplogo" class="Experience__image" width="320px"/>
+                <figcaption class="">
+                    PHP
+                </figcaption>
+            </figure>
+        </article>
+        <article class="Experience__item">
+         <figure class="Experience__imageContainer">
+            <img src="img/jquery.png" alt="jquery" class="Experience__image" />
+            <figcaption class="">
+                JQUERY
+            </figcaption>
+        </figure>
+    </article>
+    <article class="Experience__item">
+     <figure class="Experience__imageContainer">
+        <img src="img/bootstrap.png" alt="bootstrap" class="Experience__image" />
+        <figcaption class="">
+            BOOTSTRAP
+        </figcaption>
+    </figure>
+</article>
+<article class="Experience__item">
+ <figure class="Experience__imageContainer">
+    <img src="img/angularjs.png" alt="angularjs" class="Experience__image" width= "152px"/>
+    <figcaption class="">
+        ANGULARJS
+    </figcaption>
+</figure>
+</article>
+<article class="Experience__item">
+ <figure class="Experience__imageContainer">
+    <img src="img/wplogo.png" alt="wordpress" class="Experience__image" width= "252px"/>
+    <figcaption class="">
+        WORDPRESS
+    </figcaption>
+</figure>
+</article>
+<p class="Experience__description">Generalmente abocado al desarrollo de software fui conociendo diversos lenguajes y plataformas; C++,Pascal,VB,Net,Java,GeneXus.</p>
+<p>En la actualidad.. llegué al mundo web lo cual transformó mi manera de ver el desarrollo de software y entender la gran importancia,capacidad y posibilidad que la web nos permite obtener.</p>
+<p>Html5,Css,Javascript,Php se convirtieron en los pilares básicos de mis trabajos conjuntamente con otros lenguajes y frameworks que hacen de la web lo que es hoy. </p>
+
+<article class="Experience__item">
+    <figure class="Experience__imageContainer">
+        <a href="https://platzi.com/cursos/programacion-basica/" class="Experience__desc" target= _blank>
+            <img src="img/programacionbasicajs.png" alt="programacionbasicajs" class="Experience__image"/>
+            <figcaption class="">
+                Curso de Programación Básica</br>(JAVASCRIPT)</a>
+            </figcaption>
+        </figure>
+    </article>
+    <article class="Experience__item">
+        <figure class="Experience__imageContainer">
+            <a href="https://platzi.com/cursos/desarrollo-web/" class="Experience__desc" target= _blank>
+                <img src="img/cursodisenoweb.png" alt="cursodisenoweb" class="Experience__image"/>
+                <figcaption class="">
+                    Curso de Diseño Web</br>(HTML,CSS3,JS,JQUERY)</a>
+                </figcaption>
+            </figure>
+        </article>
+        <article class="Experience__item">
+         <figure class="Experience__imageContainer">
+            <a href="https://platzi.com/cursos/desarrollo-web/" class="Experience__desc" target= _blank>
+                <img src="img/cursodesarrolloweb.png" alt="cursodesarrolloweb" class="Experience__image"/>
+                <figcaption class="">
+                    Curso de Desarrollo Web</br>(HTML,CSS3,JS,JQUERY)</a>
+                </figcaption>
+            </figure>
+        </article>
+
+    </div>
+</section>
+
+<section id="trabajo" class="Work">
+    <div class="u-containerDefault">
+        <h2 class="Work__title u-title">Mis Trabajos</h2>
+    </div>
+    <article class="Work__item">
+        <figure class="Work__imageContainer">
+            <a href="http://adrianns.github.io/" class="u-subtitle" target= _blank>
+                <img src="img/portafolio.jpg" alt="Traslapuerta_WebPage" class="Work__image"/>
+                <figcaption class="">
+                    Portafolio</br>(Mi Curriculum web)</a>
+                </figcaption>
+            </figure>
+        </article>
+        <article class="Work__item">
+            <figure class="Work__imageContainer">
+                <a href="http://www.sircal.getmyip.com/ExpoMonitor" class="u-subtitle" target= _blank>
+                    <img src="img/Agro.jpg" alt="Traslapuerta_WebPage" class="Work__image" />
+                    <figcaption class="">
+                        AgroControl</br>(Webapp de Monitoreo)</a>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="Work__item">
+                <figure class="Work__imageContainer">
+                    <a href="http://www.ministeriotraslapuerta.com" class="u-subtitle" target= _blank>
+                        <img src="img/ministeriotlp.jpg" alt="Traslapuerta_WebPage" class="Work__image"/>
+                        <figcaption class="">
+                            Ministerio Traslapuerta</br>(WordPress y adicionales manuales)</a>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="Work__item">
+                    <figure>
+                        <a href="http://www.github.com/Adrianns" class="u-subtitle" target= _blank>
+                            <img src="img/github.png" alt="github" class="Work__image" width="320px"/>
+                            <figcaption class="">
+                                WebApps y Otros Proyectos MIT</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+
+                <footer id="contacto" class="Footer">
+                    <a href="mailto:adrianemedina@vera.com.uy" class="Footer__link">adrianemedina@vera.com.uy</a>
+                </footer>
+
+            </body>
+            </html>
+
