@@ -1,204 +1,504 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <title>Mi Portafolio Web</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/estilos.css"/>
-    <link rel="stylesheet" href="css/fonts.css"/>
-    <script src="js/jquery-1.11.2.min.js"></script>
-   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Adrián Medina</title>
+	
+    <!-- css -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animations.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <nav class="MainMenu">
-        <a class="icon-menu Header-button is-active" onClick="$('.MainMenu').toggleClass('u-abrirmenu');$('.MainMenu__list').toggleClass('u-visible');$('.MainMenu__item').toggleClass('u-visible');"></a>
-        <ul class="MainMenu__list ">
-            <li class="MainMenu__item">
-                <a class="MainMenu__link" href="#yo">Mi Perfil</a>
-            </li>
-            <li class="MainMenu__item">
-                <a class="MainMenu__link" href="#experiencias">Mi Experiencia</a>
-            </li>
-            <li class="MainMenu__item">
-                <a class="MainMenu__link" href="#trabajo">Mis trabajos</a>
-            </li>
-            <li class="MainMenu__item">
-                <a class="MainMenu__link" href="#contacto">Contáctame</a>
-            </li>
-        </ul>
-    </nav>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	
+	<section class="hero" id="intro">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+					<div class="animatedParent">
+						<h1 class="animated fadeInDown">ADRIÁN MEDINA</h1>
+						<p class="animated fadeInUp">Desarrollador Web</p>
+					</div>
+			   </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="#about" class="learn-more-btn btn-scroll">Conocer más</a>
+                </div>
+              </div>
+            </div>
+    </section>
+	
+	
+    <!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-md-2">
+                                                   <div class="site-logo">
+                                                            <a href="index.html" class="brand">ADRIÁN MEDINA</a>
+                                                    </div>
+                                          </div>
+                                          
 
-    <header id="yo" class="Header">
-        <figure class="Header__imageContainer">
-            <img src="img/avatar.jpg" alt="Avatar" class="Header__image"/>
-            <p class="Header__name">Adrián Medina</p>
-            <figcaption class="Header__description">
-                <a href="https://uy.linkedin.com/in/amedina91" class="Header__link"><img src="img/linkedin.png" alt="linkedin" class="" width="64px"/></a>
-                <a href="mailto:adrianemedina@vera.com.uy" class="Header__link"><img src="img/mail.png" alt="mail" class="" width="64px"/></a><br>
-            </figcaption>
-        </figure>
-    </header>
+                                          <div class="col-md-10">
+                         
+                                                      <!-- Brand and toggle get grouped for better mobile display -->
+                                          <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+                                          </div>
+                                                      <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      <div class="collapse navbar-collapse" id="menu">
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                  <li class="active"><a href="#intro">Inicio</a></li>
+                                                                  <li><a href="#about">Acerca de mi</a></li>
+																   <li><a href="#experience">Mi experiencia</a></li>
+                                                                  <li><a href="#works">Trabajos</a></li>				                                                                  
+                                                                  
+                                                                  <li><a href="#contact">Contacto</a></li>
+                                                            </ul>
+                                                      </div>
+                                                      <!-- /.Navbar-collapse -->
+                             
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div> 
+    <!-- /Navigation -->  
 
-    <section id="experiencias" class="Experience">
-        <div class="u-containerDefault">
-            <h2 class="Experience__title u-title">Mi Experiencia</h2>
-            <article class="Experience__item">
-               <figure class="Experience__imageContainer">
-                <img src="https://github.com/Adrianns/adrianns.github.io/blob/master/img/Git.png?raw=true" alt="GIT" class="Experience__image" height="220px"/>
-                <figcaption class="">
-                    GIT
-                </figcaption>
-            </figure>
-        </article>
-        <article class="Experience__item">
-           <figure class="Experience__imageContainer">
-            <img src="https://github.com/Adrianns/adrianns.github.io/blob/master/img/GitHubLogo.png?raw=true" alt="GITHUB" class="Experience__image" height="220px"/>
-            <figcaption class="">
-                GITHUB
-            </figcaption>
-        </figure>
-    </article>
-    <article class="Experience__item">
-       <figure class="Experience__imageContainer">
-        <img src="img/html5-css3-js.png" alt="html5-css3-js" class="Experience__image" width="320px"/>
-        <figcaption class="">
-            HTML5,CSS3 &amp JS
-        </figcaption>
-    </figure>
-</article>
-<article class="Experience__item">
-   <figure class="Experience__imageContainer">
-    <img src="img/phplogo.png" alt="phplogo" class="Experience__image" width="320px"/>
-    <figcaption class="">
-        PHP
-    </figcaption>
-</figure>
-</article>
-<article class="Experience__item">
-   <figure class="Experience__imageContainer">
-    <img src="img/jquery.png" alt="jquery" class="Experience__image" />
-    <figcaption class="">
-        JQUERY
-    </figcaption>
-</figure>
-</article>
-<article class="Experience__item">
-   <figure class="Experience__imageContainer">
-    <img src="img/bootstrap.png" alt="bootstrap" class="Experience__image" />
-    <figcaption class="">
-        BOOTSTRAP
-    </figcaption>
-</figure>
-</article>
-<article class="Experience__item">
-   <figure class="Experience__imageContainer">
-    <img src="img/angularjs.png" alt="angularjs" class="Experience__image" width= "152px"/>
-    <figcaption class="">
-        ANGULARJS
-    </figcaption>
-</figure>
-</article>
-<article class="Experience__item">
-   <figure class="Experience__imageContainer">
-    <img src="img/wplogo.png" alt="wordpress" class="Experience__image" width= "252px"/>
-    <figcaption class="">
-        WORDPRESS
-    </figcaption>
-</figure>
-</article>
-<p class="Experience__description">Generalmente abocado al desarrollo de software fui conociendo diversos lenguajes y plataformas; C++,Pascal,VB,Net,Java,GeneXus.</p>
-<p>En la actualidad.. llegué al mundo web lo cual transformó mi manera de ver el desarrollo de software y entender la gran importancia,capacidad y posibilidad que la web nos permite obtener.</p>
-<p>Html5,Css,Javascript,Php se convirtieron en los pilares básicos de mis trabajos conjuntamente con otros lenguajes y frameworks que hacen de la web lo que es hoy. </p>
+	<!-- Section: about -->
+    <section id="about" class="home-section color-dark bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="animatedParent">
+					<div class="section-heading text-center animated bounceInDown">
+					<h2 class="h-bold">Acerca de Adrián Medina</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
 
-<article class="Experience__item">
-    <figure class="Experience__imageContainer">
-        <a href="https://platzi.com/cursos/programacion-basica/" class="Experience__desc" target= _blank>
-            <img src="img/programacionbasicajs.png" alt="programacionbasicajs" class="Experience__image"/>
-            <figcaption class="">
-                Curso de Programación Básica</br>(JAVASCRIPT)</a>
-            </figcaption>
-        </figure>
-    </article>
-    <article class="Experience__item">
-        <figure class="Experience__imageContainer">
-            <a href="https://platzi.com/cursos/desarrollo-web/" class="Experience__desc" target= _blank>
-                <img src="img/cursodisenoweb.png" alt="cursodisenoweb" class="Experience__image"/>
-                <figcaption class="">
-                    Curso de Diseño Web</br>(HTML,CSS3,JS,JQUERY)</a>
-                </figcaption>
-            </figure>
-        </article>
-        <article class="Experience__item">
-           <figure class="Experience__imageContainer">
-            <a href="https://platzi.com/cursos/desarrollo-web/" class="Experience__desc" target= _blank>
-                <img src="img/cursodesarrolloweb.png" alt="cursodesarrolloweb" class="Experience__image"/>
-                <figcaption class="">
-                    Curso de Desarrollo Web</br>(HTML,CSS3,JS,JQUERY)</a>
-                </figcaption>
-            </figure>
-        </article>
-        <article class="Experience__item">
-           <figure class="Experience__imageContainer">
-            <a href="https://platzi.com/cursos/git-github/" class="Experience__desc" target= _blank>
-                <img src="img/cursodegitygithub.png" alt="cursodegitygithub" class="Experience__image"/>
-                <figcaption class="">
-                    Curso de Git y Github</br>(GIT & GITHUB)</a>
-                </figcaption>
-            </figure>
-        </article>
+		</div>
 
-    </div>
-</section>
+		<div class="container">
 
-<section id="trabajo" class="Work">
-    <div class="u-containerDefault">
-        <h2 class="Work__title u-title">Mis Trabajos</h2>
-    </div>
-    <article class="Work__item">
-        <figure class="Work__imageContainer">
-            <a href="http://adrianns.github.io/PulseBlog/" class="u-subtitle" target= _blank>
-                <img src="img/pulseblog.png" alt="PulseBlog_WebPage" class="Work__image"/>
-                <figcaption class="">
-                Pulse Blog</br>(Ejemplo de Blog Responsive)</a>
-                </figcaption>
-        </figure>
-    </article>
-    <article class="Work__item">
-        <figure class="Work__imageContainer">
-            <a href="http://adrianns.github.io/" class="u-subtitle" target= _blank>
-                <img src="img/portafolio.jpg" alt="LaIglesiaDeDios_WebPage" class="Work__image"/>
-                <figcaption class="">
-                    Portafolio</br>(Mi Curriculum web)</a>
-                </figcaption>
-            </figure>
-        </article>
-            <article class="Work__item">
-                <figure class="Work__imageContainer">
-                    <a href="http://www.laiglesiadediosenuruguay.com" class="u-subtitle" target= _blank>
-                        <img src="img/ministeriotlp.jpg" alt="Traslapuerta_WebPage" class="Work__image"/>
-                        <figcaption class="">
-                            La Iglesia de Dios en Uruguay</br>(WordPress y adicionales manuales)</a>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="Work__item">
-                    <figure>
-                        <a href="https://github.com/Adrianns?tab=repositories" class="u-subtitle" target= _blank>
-                            <img src="img/github.png" alt="github" class="Work__image" width="320px"/>
-                            <figcaption class="">
-                                WebApps y Otros Proyectos MIT</a>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </section>
+		
+        <div class="row">
+		
+		
+            <div class="col-lg-8 col-lg-offset-2 animatedParent">		
+				<div class="text-center">
+				<p>Egresado como bachiller informático del Instituto Tecnológico Superior en el año 2012. Montevideo,Uruguay.</p>
+					<p><strong>
+					Mi trabajo se basa en entender las necesidades de los clientes y ofrecerles las mejores soluciones con las últimas tecnologías
+					del mercado</strong> 
+					</p>
+		
+					<p>Generalmente abocado al desarrollo de software fui conociendo diversos lenguajes y plataformas; C++,Pascal,VB,Net,Java,GeneXus.
 
-                <footer id="contacto" class="Footer">
-                    <a href="mailto:adrianemedina@vera.com.uy" class="Footer__link">adrianemedina@vera.com.uy</a>
-                </footer>
+En la actualidad.. llegué al mundo web lo cual transformó mi manera de ver el desarrollo de software y entender la gran importancia,capacidad y posibilidad que la web nos permite obtener.
 
-            </body>
-            </html>
+Html5,Css,Javascript,Php se convirtieron en los pilares básicos de mis trabajos conjuntamente con otros lenguajes y frameworks que hacen de la web lo que es hoy.</p>
+</br></br>
+					<a href="#experience" class="btn btn-skin btn-scroll">Qué puedo hacer por usted?</a>
+				</div>
+            </div>
+		
 
+        </div>		
+		</div>
+
+	</section>
+	<!-- /Section: about -->
+	
+	<!-- Section: Experience -->
+	<section id="experience" class="home-section color-dark bg-gray">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div>
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Más Cursos</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center">
+		<div class="container">
+
+        <div class="row animatedParent">
+            <div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft">
+                <div class="service-box">
+					<div class="service-image">
+						<img src="img/experience/cursodegitygithub.png">
+					</div>
+					<div class="service-desc">						
+						<h5>Curso de GIT & Github</h5>
+						
+						<p>
+						Desarrollo con control de versiones
+						</p>
+				
+						
+					</div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft slow">
+          		<div class="service-box">
+					<div class="service-image">
+						<img src="img/experience/programacionbasicaweb.png">
+					</div>
+					<div class="service-desc">						
+						<h5>Curso de Programación Web</h5>
+						
+						<p>
+						Manejos de lenguajes de programación
+						</p>
+				
+						
+					</div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft slower">
+                 <div class="service-box">
+					<div class="service-image">
+						<img src="img/experience/cursodesarrolloweb.png">
+					</div>
+					<div class="service-desc">						
+						<h5>Curso de Desarrollo Web</h5>
+						
+						<p>
+						Maquetado Web
+						</p>
+				
+						
+					</div>
+                </div>
+				</div>
+            </div>
+
+
+
+        </div>		
+		</div>
+		</div>
+</br>
+<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div>
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Experiencia</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="text-center">
+		<div class="container">
+
+
+	<div class="row">
+	<div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 70%;background-color:#b40000">
+            </div>
+            <span class="progress-type">GIT / GITHUB / BITBUCKET</span>
+            <span class="progress-noncompleted">70%</span>
+        </div>                   
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;background-color:#ff4d00">
+                <span class="sr-only">100% Complete</span>
+            </div>
+            <span class="progress-type">HTML / HTML5</span>
+            <span class="progress-completed">100%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;background-color:#0063ff">
+            </div>
+            <span class="progress-type">CSS / CSS3 / SASS / STYLUS</span>
+            <span class="progress-completed">100%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;background-color:#ffe000">
+            </div>
+            <span class="progress-type">JavaScript / jQuery</span>
+            <span class="progress-noncompleted">80%</span>
+        </div>
+                <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;background-color:#950082">
+            </div>
+            <span class="progress-type">PHP / YII2</span>
+            <span class="progress-noncompleted">80%</span>
+        </div>
+
+ 
+	</div>
+
+		</div>
+		</div>
+	</section>
+
+
+	<!-- /Section: Experience -->
+
+
+
+
+
+	<!-- Section: services 
+    <section id="service" class="home-section color-dark bg-gray">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div>
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Qué podemos hacer por usted?</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center">
+		<div class="container">
+
+        <div class="row animatedParent">
+            <div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-laptop fa-2x"></span> 
+					</div>
+					<div class="service-desc">						
+						<h5>Diseño Web</h5>
+						<div class="divider-header"></div>
+						<p>
+						Desarrollamos su imagen en la web
+						</p>
+											<p>
+					Nos especializamos en desarrollar sistemas a medida sobre tecnologías web.
+					</p>
+						
+						<a href="#" class="btn btn-skin">Ver más</a>
+					</div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft slow">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-camera fa-2x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>Fotografía</h5>
+						<div class="divider-header"></div>
+						<p>
+						Contamos con equipo de fotografía para personalizar aún más su trabajo.
+						</p>
+						<a href="#" class="btn btn-skin">Ver más</a>
+					</div>
+                </div>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+				<div class="animated rotateInDownLeft slower">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-code fa-2x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>Diseño Gráfico</h5>
+						<div class="divider-header"></div>
+						<p>
+						Equipo de diseñadores dispuestos a actualizar su imagen.
+						</p>
+						<a href="#" class="btn btn-skin">Ver más</a>
+					</div>
+                </div>
+				</div>
+            </div>
+
+        </div>		
+		</div>
+		</div>
+	</section>
+	 /Section: services -->
+	
+
+	<!-- Section: works -->
+    <section id="works" class="home-section color-dark text-center bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div>
+					<div class="animatedParent">
+					<div class="section-heading text-center">
+					<h2 class="h-bold animated bounceInDown">Mis Trabajos</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+            <div class="row animatedParent">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+
+                    <div class="row gallery-item">
+                        <div class="col-md-3 animated fadeInUp">
+							<a href="img/works/laiglesia.png" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/laiglesia.png" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3 animated fadeInUp slow">
+							<a href="img/works/pulseblog.png" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/pulseblog.png" class="img-responsive" alt="img">
+							</a>
+						</div>
+<!-- 						<div class="col-md-3 animated fadeInUp slower">
+							<a href="img/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/3.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3 animated fadeInUp">
+							<a href="img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/4.jpg" class="img-responsive" alt="img">
+							</a>
+						</div> -->
+					</div>
+	
+                </div>
+            </div>	
+		</div>
+
+	</section>
+	<!-- /Section: works -->
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="animatedParent">
+					<div class="section-heading text-center">
+					<h2 class="h-bold animated bounceInDown">Contactarme</h2>
+					<div class="divider-header"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="container">
+
+			<div class="row marginbot-80">
+				<div class="col-md-8 col-md-offset-2">
+				<h5 class="h-bold"><a href="mailto:adrianemedina@vera.com.uy">adrianemedina@vera.com.uy</a></h5>
+						<!-- <form id="contact-form">
+						<div class="row marginbot-20">
+							<div class="col-md-6 xs-marginbot-20">
+								<input type="text" class="form-control input-lg" id="name" placeholder="Nombre*" required="required" />
+							</div>
+							<div class="col-md-6">
+								<input type="email" class="form-control input-lg" id="email" placeholder="Email*" required="required" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+										<input type="text" class="form-control input-lg" id="subject" placeholder="Asunto*" required="required" />
+								</div>
+								<div class="form-group">
+									<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+										placeholder="Mensaje*"></textarea>
+								</div>						
+								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
+									Enviar Mensaje</button>
+							</div>
+						</div>
+						</form> -->
+				</div>
+			</div>	
+
+
+		</div>
+	</section>
+	<!-- /Section: contact -->
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="footer-menu">
+						<li><a href="#">Volver al Inicio</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 text-right">
+					<p>&copy;Copyright 2014 - Designed by <a href="http://bootstraptaste.com">Bootstrap Themes</a></p>
+                    <!-- 
+                        All links in the footer should remain intact. 
+                        Licenseing information is available at: http://bootstraptaste.com/license/
+                        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Bocor
+                    -->
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>	 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="js/css3-animate-it.js"></script>
+
+</body>
+
+</html>
