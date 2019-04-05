@@ -825,7 +825,8 @@ a:hover {
 ======================================*/
 
 .testimonials .owl-carousel .owl-item img {
-  width: auto;
+  width: 200px;
+  height: 80px;
 }
 
 .testimonial-box {
@@ -856,7 +857,7 @@ a:hover {
   background-color: #fff;
   width: 52px;
   height: 52px;
-  display: block;
+  display: none;
   margin: 0 auto;
   border-radius: 50%;
   line-height: 1.6;
@@ -1254,7 +1255,8 @@ footer .credits a {
 
 @media (min-width: 1200px) {
   .testimonial-box .description {
-    padding: 0 13rem;
+    padding: 0;
+    /* padding: 0 13rem; */
   }
 }
 
@@ -1263,3 +1265,9 @@ footer .credits a {
     bottom: 15px;
   }
 }
+
+.bwImage{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
